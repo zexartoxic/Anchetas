@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title> Wishes & Dreams </title>
+	<meta name="description" content="Anchetas">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='css/css.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet"  href="css/estilo.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css"/>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />-->
+    <!--<link rel="stylesheet" href="js/jqueryMobile/jquery.mobile.theme-1.4.3.min.css" />-->
+    <link rel="stylesheet" href="js/jqueryMobile/jquery.mobile.structure-1.4.3.min.css"/>
+    <link rel="stylesheet" href="js/jqueryMobile/jquery.mobile.icons-1.4.3.css" />
+    <script src="js/jqueryMobile/jquery.mobile-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/easyslider1.7/js/jquery.js"></script>
+    <script type="text/javascript" src="js/easyslider1.7/js/easySlider1.7.js"></script>
+    <link href="js/easyslider1.7/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+	<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here 
+    <p>Hello world! This is HTML5 Boilerplate.</p>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>-->
+    <script>
+    $(document).ready(function(){   
+    $("#slider").easySlider({
+        auto: true,
+        continuous: true,
+        nextId: "slider1next",
+        prevId: "slider1prev"
+    });
+    $("#slider2").easySlider({ 
+        numeric: true
+    });
+});</script>
+<!-- *************************  PAGINA DE INICIO        ******************************** -->
+    <div data-role="page" id="Home">
+        <header data-position="fixed" data-id="cabeza">
+            <div class="logo">
+                <a href="#inicio"><img src="imagenes/logo.png" alt="Puls4"/></a>
+            </div>
+            <div class="titular">
+                <h1 class="titulo">
+                   Wishes & Dreams 
+                </h1>
+                <div>
+                    <a href="#" class="filtro">Anchetas y regalos</a>
+                    <!--<a href="#" class="publicar"></a>-->
+                </div>
+            </div>
+            <p class="comparte">Comparte con nosotros:</p>
+            <div class="usuario">
+                <div class="redes">   
+                    <a href="https://www.facebook.com/AcurstinSoft" target="_blank" id="icono"><img src="imagenes/facebook.png" alt="facebook"></a>
+                    <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="imagenes/googleplus.png"></a>
+                    <a href="https://co.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" id="icono"></a>
+                    <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="imagenes/twitter.png" title="@AcurstinSoft" id="icono"></a>
+                </div>
+            </div>
+        </header>
+    	<nav data-role="navbar">
+            <ul class="menu">
+                <li><a href="#Home" class="home">&nbsp;&nbsp;Home</a></li>
+                <li><a href="#Productos" class="producto">&nbsp;&nbsp;Productos</a></li>
+                <li><a href="#Contacto" class="contacto">&nbsp;&nbsp;Contacto</a></li>
+            </ul>
+        </nav>
+    	<section data-role="content" class="container">
+            <h2>Bienvenidos</h2>
+            <p class="guia">aqui encontraras:</p>
+            <div class="row">
+                <div class="col-sm-3 bloque1">
+                    <ul class="menu2">
+                        <li>Productos</li>
+                        <li><a href="#item1" class="item1">&nbsp;&nbsp;Aniversarios</a></li>
+                        <li><a href="#item2" class="item2">&nbsp;&nbsp;Cumpleaños</a></li>
+                        <li><a href="#item3" class="item3">&nbsp;&nbsp;Fabrica</a></li>
+                        <li><a href="#item4" class="item4">&nbsp;&nbsp;Otros</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <article class="principal">
+                        <p class="descripcion">¿No sabes qué regalar en una fecha especial? Acá encontraras todo tipo de detalles y solución pronta a tu problema !</p>
+                         <p class="descripcion">No importa si es el Día del Amor y la Amistad, un aniversario o un cumpleaños: cualquier ocasión es un buen pretexto para demostrar afecto a través de un obsequio. Y qué mejor que demostrarlo con las innovadoras anchetas y regalos de wishes & dreams!</p>
+                         <p class="descripcion">Recuerda que en la pestaña de Productos puedes ver todos nuestros Productos</p>
+                    </article>
+                </div>
+            </div>
+            <div>
+                <p class="horario">&nbsp;&nbsp;horario de pedidos Todos Los Dias! De: 8 Am a 6 Pm</p>
+            </div>
+            <div id="slider">
+                <ul>
+                    <li>
+                        <a href="#" class="conte"><img src="imagenes/foto1.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto1.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto1.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto1.jpg" alt="imagen" class="fotos"/></a>
+                    </li>
+                    <li>
+                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                    </li>
+                    <li>
+                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                    </li>
+                </ul>
+            </div>    
+        </section>
+       <footer data-role="footer" data-id="pie" data-position="fixed">
+           <h3>Wishes & Dreams 2014</h3>
+        </footer>
+    </div>
+
+<!-- *************************  FIN DE PAGINA DE INICIO ******************************** -->
+
+
+<!-- *************************  PAGINA DE PRODUCTOS     ******************************** -->
+
+     <div data-role="page" id="Productos">
+        <header data-position="fixed" data-id="cabeza">
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="Puls4"/>
+            </div>
+            <div class="titular">
+                <h1 class="titulo">
+                   Wishes & Dreams 
+                </h1>
+                <div>
+                    <a href="#" class="filtro">Anchetas y regalos</a>
+                    <!--<a href="#" class="publicar"></a>-->
+                </div>
+            </div>
+            <p class="comparte">Comparte con nosotros:</p>
+            <div class="usuario">
+                <div class="redes">   
+                    <a href="https://www.facebook.com/AcurstinSoft" target="_blank" id="icono"><img src="imagenes/facebook.png" alt="facebook"></a>
+                    <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="imagenes/googleplus.png"></a>
+                    <a href="https://co.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" id="icono"></a>
+                    <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="imagenes/twitter.png" title="@AcurstinSoft" id="icono"></a>
+                </div>
+            </div>
+        </header>
+        <nav data-role="navbar">
+            <ul class="menu">
+                <li><a href="#Home" class="home">&nbsp;&nbsp;Home</a></li>
+                <li><a href="#Productos" class="producto">&nbsp;&nbsp;Productos</a></li>
+                <li><a href="#Contacto" class="contacto">&nbsp;&nbsp;Contacto</a></li>
+            </ul>
+        </nav>
+        <section data-role="content" class="container">
+            
+        </section>
+       <footer data-role="footer" data-id="pie" data-position="fixed">
+           <h3>Wishes & Dreams 2014</h3>
+        </footer>
+    </div>
+<!-- *************************  FIN PAGINA DE PORTAFOLIO  ******************************** -->
+
+
+<!-- *************************    PAGINA DE CONTACTO      ******************************** -->
+
+    <div data-role="page" id="Contacto">
+        <header data-position="fixed" data-id="cabeza">
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="Puls4"/>
+            </div>
+            <div class="titular">
+                <h1 class="titulo">
+                   Wishes & Dreams 
+                </h1>
+                <div>
+                    <a href="#" class="filtro">Anchetas y regalos</a>
+                    <!--<a href="#" class="publicar"></a>-->
+                </div>
+            </div>
+        </header>
+        <nav data-role="navbar">
+            <ul class="menu">
+                <li><a href="#Home" class="home">&nbsp;&nbsp;Home</a></li>
+                <li><a href="#Productos" class="producto">&nbsp;&nbsp;Productos</a></li>
+                <li><a href="#Contacto" class="contacto">&nbsp;&nbsp;Contacto</a></li>
+            </ul>
+        </nav>
+        <section data-role="content" class="container">
+            <h2>Contactenos</h2>
+            <p class="guia">no dejes que tus ideas de regalarle algo a alquien o dudas se queden en el aire</p>
+            <div class="row">
+                 <div class="col-sm-4">
+                    <div >
+                        <p class="nota">Recuerda que  puedes hacernos tus pedidos o cualquier duda que tengas a los numeros que aparecen al otro lado o bien puedes enviarnos un mensaje o comunicarse con nosotros atravez de nuestro chat</p>
+                  </div>  
+                </div>
+                <div class="col-sm-4">
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name">
+                        <label for="correo">Email:</label>
+                        <input type="email" name="correo" id="correo">
+                        <label for="descripcion">Mensaje</label>
+                        <textarea name="descripcion" id="descripcion"></textarea>
+                        <button type="submit" name="submit" value="Enviar"><span class="boton2"> Enviar&nbsp;&nbsp;</span></button>
+                        <button type="reset" name="borrar" ><span class="boton1">Limpiar&nbsp;&nbsp;</span></button>
+                    </form>
+                </div>
+                 <div class="informacion col-sm-4">
+                    <div>
+                       <p>&nbsp;&nbsp;- 4720098 -</p>
+                       <p>&nbsp;&nbsp;3192058836</p>
+                       <p>&nbsp;&nbsp;3192058836</p>
+                    </div>
+                    <span>Comparte Con nosotros:</span>
+                    <div class="redes">   
+                        <a href="https://www.facebook.com/AcurstinSoft" target="_blank" id="icono"><img src="imagenes/facebook.png" alt="facebook"></a>
+                        <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="imagenes/googleplus.png"></a>
+                        <a href="https://co.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" id="icono"></a>
+                        <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="imagenes/twitter.png" title="@AcurstinSoft" id="icono"></a>
+                    </div>  
+                </div> 
+            </div>
+        </section>
+       <footer data-role="footer" data-id="pie" data-position="fixed">
+           <h3>Wishes & Dreams 2014</h3>
+        </footer>
+    </div>
+<!-- *************************   FIN PAGINA DE CONTACTO      ******************************** -->
+
+<!-- *************************      INICIAR SESSION          ******************************** -->
+
+    <div data-role="page" id="inicio">
+        <header data-position="fixed" data-id="cabeza">
+            <div class="logo">
+                <a href="#Home"><img src="imagenes/logo.png" alt="Puls4"/></a> 
+            </div>
+            <div class="titular">
+                <h1 class="titulo">
+                   Wishes & Dreams 
+                </h1>
+                <div>
+                    <a href="#" class="filtro">Anchetas y regalos</a>
+                    <!--<a href="#" class="publicar"></a>-->
+                </div>
+            </div>
+        </header>
+        <section data-role="content" class="container">
+            <h2>Iniciar Session</h2>
+            <div class="row">
+                <div class="col-sm-4"><a href="#Home"><h3>Volver</h3></a></div>
+                <div class="col-sm-4">
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                        <label for="name">Usuario:</label>
+                        <input type="text" name="name" id="name">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                        <button type="submit" name="submit" value="Enviar"><span class="boton2">Entrar&nbsp;&nbsp;</span></button> 
+                    </form>
+                    <button><a href="#perfil"><span class="boton2">&nbsp;&nbsp;Perfil</span></a></button>
+                </div>
+                 <div "col-sm-4"></div>
+            </div>
+        </section>
+       <footer data-role="footer" data-id="pie" data-position="fixed">
+           <h3>Wishes & Dreams 2014</h3>
+        </footer>
+    </div>
+<!-- *************************   FIN INICIAR SESSION  ******************************** -->
+
+<!-- *************************      PERFIL DE USUARIO     ******************************** -->
+
+    <div data-role="page" id="perfil">
+        <header data-position="fixed" data-id="cabeza">
+            <div class="logo">
+                <a href="#Home"><img src="imagenes/logo.png" alt="Puls4"/></a> 
+            </div>
+            <div class="titular">
+                <h1 class="titulo">
+                   Wishes & Dreams 
+                </h1>
+                <div>
+                    <a href="#" class="filtro">Anchetas y regalos</a>
+                    <!--<a href="#" class="publicar"></a>-->
+                </div>
+            </div>
+        </header>
+        <section data-role="content" class="container">
+            <h2>Hola,"Nombre"</h2>
+            <p class="guia">Que Deseas Hacer?</p>
+            <div class="row">
+                <div class="col-sm-4"><a href="#Home"><h3>Volver</h3></a></div>
+                <div class="col-sm-4">
+                    <h2>Aqui Ira la Aplicacion que estoy haciendo</h2>
+                </div>
+                 <div "col-sm-4"></div>
+            </div>
+        </section>
+       <footer data-role="footer" data-id="pie" data-position="fixed">
+           <h3>Wishes & Dreams 2014</h3>
+        </footer>
+    </div>
+<!-- *************************   FIN INICIAR SESSION  ******************************** -->
+</body>
+</html>

@@ -1,0 +1,332 @@
+azul = #22BCE0
+gris_oscuro = #444
+gris_texto = #7A7A7A
+naranja = #DD4F24 
+
+@charset "utf-8";
+
+@font-face {
+	font-family: 'iconitos';
+	src:url('../fonts/icomoon.eot?nwmkrn');
+	src:url('../fonts/icomoon.eot?#iefixnwmkrn') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?nwmkrn') format('woff'),
+		url('../fonts/icomoon.ttf?nwmkrn') format('truetype'),
+		url('../fonts/icomoon.svg?nwmkrn#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a
+	color naranja 
+
+body
+	background-image:url('../imagenes/fondo4.jpg');
+	//background #E8E8E8
+	color gris_oscuro
+	font-size 16px
+	font-family "Cinzel"
+
+footer
+	background #A3A3A3
+	color #fff
+	padding 1em 0
+	text-align center
+	width 100%
+	opacity 0.7
+
+
+	h3
+		font-size 14px
+		font-weigth normal
+
+		strong
+			display block
+		.mejor
+			&:before
+			&:after
+				content " - "
+
+header
+	background gris_oscuro
+	box-shadow 0 5px 0 rgba(0,0,0,0.2)
+	color white
+	padding 0.5em
+	position relative
+	overflow hidden
+	text-align left
+	z-index 1
+
+
+	.logo
+		border-right 1px solid azul
+		float left
+		width 60px
+
+		img
+			width 52px
+
+	.titular
+		margin 7px 60px 0 70px
+
+		.filtro
+			color azul
+			font-weigth bold
+			font-style italic
+			text-decoration none
+
+		.publicar
+			background naranja
+			color white
+			float right
+			font-style italic
+			margin -5px 1em 0 0
+			padding 0.2em  0.5em 
+			text-decoration none
+			text-shadow 1px 1px 0px black
+			font-family "iconitos"
+			&:before
+				content "\e600"
+
+		.titulo
+			font-size 25px
+			font-weigth normal
+			margin 0
+			padding 0
+
+	.usuario
+		position absolute
+		right 0
+		top 0
+		img
+			width 38px
+			border-radius 50%
+			top 20px
+			right 10px
+			position relative
+			z-index 2
+.comparte{
+	padding 0px 0px 10px 0px
+	margin -56px 160px 0px 0px
+	color #78DDF4
+	float right
+}
+.redes img{
+opacity: 0.6;
+}
+@-webkit-keyframes rotater1 {
+    0% { -webkit-transform:rotate(0) scale(1) }
+	50% { -webkit-transform:rotate(360deg) scale(1) }
+	100% { -webkit-transform:rotate(360deg) scale(1) }
+}
+.redes img:hover{
+	opacity: 1;
+	 /* safari / chrome */
+    -webkit-animation-name:rotater1; 
+    -webkit-animation-duration:1.5s; 
+    -webkit-animation-iteration-count:1; 
+    -webkit-animation-timing-function: ease-out;
+    
+    /* mozilla */
+    -moz-transform:rotate(360deg) scale(2);
+    -moz-transition-duration:1.5s;
+    -moz-transition-timing-function: ease-out;
+    
+    /* opera */
+    -o-transform:rotate(360deg) scale(2);
+    -o-transition-duration:1.5s;
+    -p-transition-timing-function: ease-out;
+    
+    /* ie */
+    -ms-transform:rotate(360deg) scale(2);
+    -ms-transform-duration:1.5s;
+    -ms-transform-timing-function: ease-out;
+	z-index: 1000;
+}	
+
+nav
+	background azul
+	height 40px
+	position relative
+	border-left 10px solid white
+
+	&:before
+		border-bottom 20px solid transparent
+		border-left 20px solid white
+		border-top 20px solid transparent
+		content ""
+		position absolute
+		top 0
+		left 0
+
+	.menu
+		line-height 40px
+		margin 0px 0px 0px 25px
+		padding 0
+		overflow-x auto
+		white-space nowrap
+
+		li
+			display inline-block
+			border-right 1px solid #3195AC
+
+
+			a
+				color white
+				display block
+				margin 0 0.5em
+				padding 0
+				text-decoration none
+
+			.home
+				&:before	
+					font-family "iconitos"
+					font-size 20px
+					content "\e610"
+				&:hover
+					background #79D2E6
+				
+			.producto
+				&:before	
+					font-family "iconitos"
+					font-size 20px
+					content "\e611"
+				&:hover
+					background #79D2E6
+					
+			.contacto
+				&:before	
+					font-family "iconitos"
+					font-size 20px
+					content "\e602"
+				&:hover
+					background #79D2E6
+
+.bloque1
+	text-align center
+
+.menu2
+	background #EBEEEF
+	border-radius 20px
+
+	li  
+		display block
+		padding 15px
+		border-bottom  solid 2px #fff
+		margin 	0px 10px 0px -32px
+		font-size 18px
+
+		&:after	
+			font-family "iconitos"
+			font-size 20px
+			content "\e60b"
+			float right
+		&:first-child
+			&:after	
+				font-family "iconitos"
+				font-size 20px
+				content "\e600"
+				float right
+		a
+			text-decoration none
+
+		&:last-child
+			border-bottom none
+
+.horario
+	text-align center
+	background rgba(0,0,0,0.6)
+	border-radius 20px
+	color #fff
+	margin 20px 0px 0px 0px
+	padding 10px
+	
+	&:before	
+		font-family "iconitos"
+		font-size 20px
+		content "\e603"
+
+.principal
+	background rgba(0,0,0,0.6)
+	border-radius 20px
+	color #fff
+	margin 0px 0px 0px 0px
+
+	.descripcion
+		margin 0px 15px 0px 15px
+		padding 15px
+.container
+	background rgba(0,0,0,0.4)
+	margin 20px 0px 0px 0px
+	h2
+		font-size 3em
+		margin 0
+		padding 0
+		text-align center
+		color #fff
+
+	.guia
+		text-align center
+		color #fff
+#slider
+	margin 20px 20% 0px 20%
+	
+
+.fotos
+	width 150px
+	height 200px
+
+.conte
+	margin 0px 10px 0px 10px
+.nota
+	text-align center
+	background rgba(0,0,0,0.6)
+	border-radius 20px
+	color #fff
+	margin 20px 0px 0px 0px
+	padding 10px
+.informacion
+	text-align center
+	background rgba(0,0,0,0.6)
+	border-radius 20px
+	color #fff
+	margin 20px 0px 0px 0px
+	padding 10px
+
+	p
+		&:before
+			font-family: "iconitos";
+			content: "\e604";
+		&:first-child
+			&:before	
+				font-family "iconitos"
+				content "\e601"
+			
+form
+	color #fff
+
+	textarea
+		color #000
+button
+	
+.boton
+	color #fff
+	background #22BCE0
+
+.boton2:after{
+	font-family: "iconitos";
+	content: "\e60e";
+	color green
+}
+.boton1:after{
+	font-family: "iconitos";
+	content: "\e60d";
+	color red
+}
+
+@media screen and (max-width: 768px)
+	.usuario
+		display none
+	.comparte
+		display none
+	#slider
+		margin 20px 20% 0px 0px
