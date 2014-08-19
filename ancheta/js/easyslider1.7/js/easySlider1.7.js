@@ -71,12 +71,12 @@
 			var t = 0;
 			$("ul", obj).css('width',s*w);			
 			
-			if(options.continuous){
+			/*if(options.continuous){
 				$("ul", obj).prepend($("ul li:last-child", obj).clone().css("margin-left","-"+ w +"px"));
 				$("ul", obj).append($("ul li:nth-child(2)", obj).clone());
 				$("ul", obj).css('width',(s+1)*w);
 			};				
-			
+			*/
 			if(!options.vertical) $("li", obj).css('float','left');
 								
 			if(options.controlsShow){

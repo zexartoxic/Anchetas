@@ -9,38 +9,121 @@
     <link rel="stylesheet"  href="css/estilo.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css"/>
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />-->
-    <!--<link rel="stylesheet" href="js/jqueryMobile/jquery.mobile.theme-1.4.3.min.css" />-->
     <link rel="stylesheet" href="js/jqueryMobile/jquery.mobile.structure-1.4.3.min.css"/>
     <link rel="stylesheet" href="js/jqueryMobile/jquery.mobile.icons-1.4.3.css" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="js/main.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/jqueryMobile/jquery.mobile-1.4.3.min.js"></script>
     <script type="text/javascript" src="js/easyslider1.7/js/jquery.js"></script>
     <script type="text/javascript" src="js/easyslider1.7/js/easySlider1.7.js"></script>
     <link href="js/easyslider1.7/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-	<!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <script>
+    $(document).ready(function() {
+    $('#fade').click(function(){lightbox_close();});
+    $('#light').click(function(){lightbox_close();});
+    $('#light1').click(function(){lightbox_close1();});
+    $('#fade').click(function(){lightbox_close1();});
+    $('#light2').click(function(){lightbox_close2();});
+    $('#fade').click(function(){lightbox_close2();});
+    $('#light3').click(function(){lightbox_close3();});
+    $('#fade').click(function(){lightbox_close3();});
+    $('#light4').click(function(){lightbox_close4();});
+    $('#fade').click(function(){lightbox_close4();});;
+    $('.item8').click(function(){lightbox_close5();});
+    $('#fade').click(function(){lightbox_close5();});
+    $('#fade1').click(function(){lightbox_close6();});
+    $('.item9').click(function(){lightbox_close6();});
+    
 
-        <!-- Add your site or application content here 
-    <p>Hello world! This is HTML5 Boilerplate.</p>
+    $('.item1').click(function(event){lightbox_open1(event)});
+    $('.item2').click(function(event){lightbox_open2(event)});
+    $('.item3').click(function(event){lightbox_open3(event)});
+    $('.item4').click(function(event){lightbox_open4(event)});
+    $('.item5').click(function(event){lightbox_open5(event)});
+    $('.item7').click(function(event){lightbox_open6(event)});
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>-->
+});
+
+function lightbox_open(event){
+    window.scrollTo(0,0);
+    $('#light1').css("display","block");
+    $('#fade').css("display","block");
+};
+function lightbox_close(){
+    $('#light1').css("display","none");
+    $('#fade').css("display","none");
+};
+//item1
+function lightbox_open1(event){
+    window.scrollTo(0,0);
+    $('#light1').css("display","block");
+    $('#fade').css("display","block");
+};
+function lightbox_close1(){
+    $('#light1').css("display","none");
+    $('#fade').css("display","none");
+};
+//item2
+function lightbox_open2(event){
+    window.scrollTo(0,0);
+    $('#light2').css("display","block");
+    $('#fade').css("display","block");
+};
+function lightbox_close2(){
+    $('#light2').css("display","none");
+    $('#fade').css("display","none");
+};
+//item3
+function lightbox_open3(event){
+    window.scrollTo(0,0);
+    $('#light3').css("display","block");
+    $('#fade').css("display","block");
+};
+function lightbox_close3(){
+    $('#light3').css("display","none");
+};
+//item4
+function lightbox_open4(event){
+    window.scrollTo(0,0);
+    $('#light4').css("display","block");
+    $('#fade').css("display","block");
+};
+function lightbox_close4(){
+    $('#light4').css("display","none");
+    $('#fade').css("display","none");
+};
+//item5
+function lightbox_open5(event){
+    window.scrollTo(0,0);
+    $('#light5').css("display","block");
+    $('#fade').css("display","block");
+};
+function lightbox_close5(){
+    $('#light5').css("display","none");
+    $('#fade').css("display","none");
+};
+//item6
+function lightbox_open6(event){
+    window.scrollTo(0,0);
+    $('#light6').css("display","block");
+    $('#fade1').css("display","block");
+};
+function lightbox_close6(){
+    $('#light6').css("display","none");
+    $('#fade1').css("display","none");
+};
+</script>
     <script>
     $(document).ready(function(){   
     $("#slider").easySlider({
         auto: true,
         continuous: true,
-        nextId: "slider1next",
-        prevId: "slider1prev"
-    });
-    $("#slider2").easySlider({ 
-        numeric: true
     });
 });</script>
 <!-- *************************  PAGINA DE INICIO        ******************************** -->
@@ -52,26 +135,24 @@
                 </h1>
                 <div>
                     <a href="#" class="filtro">Anchetas y regalos</a>
-                    <!--<a href="#" class="publicar"></a>-->
                 </div>
             </div>
             <p class="comparte">Comparte con nosotros:</p>
             <div class="usuario">
                 <div class="redes">   
-                    <a href="https://www.facebook.com/AcurstinSoft" target="_blank" id="icono"><img src="imagenes/facebook.png" alt="facebook"></a>
-                    <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="imagenes/googleplus.png"></a>
-                    <a href="https://co.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" id="icono"></a>
-                    <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="imagenes/twitter.png" title="@AcurstinSoft" id="icono"></a>
+            <a href="https://www.facebook.com/WishesAndDreams222" target="_blank" id="icono"><img src="img/facebook.png" alt="facebook"></a>
+            <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="img/googleplus.png"></a>
+            <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="img/Twitter.png" title="@AcurstinSoft" id="icono"></a>
                 </div>
             </div>
         </header>
          <div class="logo">
-                <a href="#inicio"><img src="imagenes/logo.png"/></a>
+                <a href="#inicio"><img src="img/logo.png"/></a>
          </div>
     	<nav data-role="navbar">
             <ul class="menu">
                 <li><a href="#Home" class="home">&nbsp;&nbsp;Home</a></li>
-                <li><a href="#Productos" class="producto">&nbsp;&nbsp;Productos</a></li>
+                <li><a href="#Productos"  class="producto">&nbsp;&nbsp;Productos</a></li>
                 <li><a href="#Contacto" class="contacto">&nbsp;&nbsp;Contacto</a></li>
             </ul>
         </nav>
@@ -80,46 +161,123 @@
             <div class="row">
                 <div class="col-sm-3 bloque1">
                     <ul class="menu2">
-                        <li>Productos</li>
-                        <li><a href="#item1" class="item1">&nbsp;&nbsp;Aniversarios</a></li>
-                        <li><a href="#item2" class="item2">&nbsp;&nbsp;Cumpleaños</a></li>
-                        <li><a href="#item3" class="item3">&nbsp;&nbsp;Fabrica</a></li>
-                        <li><a href="#item4" class="item4">&nbsp;&nbsp;Otros</a></li>
+                        <li class="bloque10">Productos</li>
+                        <li><a href="#item1" class="item1">Aniversarios</a></li>
+                        <li><a href="#item2" class="item2">Cumpleaños</a></li>
+                        <li><a href="#item3" class="item3">Fabrica</a></li>
+                        <li><a href="#item4" class="item4">Otros</a></li>
                     </ul>
                 </div>
+                <div id="light1">
+                    <article class="item">
+                        <div class="titulo-i"><h4>Aniversarios</h4></div>
+                        <div class="texto-i">
+                            <p>Sabemos que hay fechas importantes para ti,y que mejor que darle algo para la ocacion?</p>
+                            <a class="link" href="#Productos">Ver Productos</a><span class="marca">no dudes!</span>
+                        </div>
+                    </article>
+                </div>
+                <div id="light2">
+                    <article class="item">
+                        <div class="titulo-i"><h4>Cumpleaños</h4></div>
+                        <div class="texto-i">
+                            <p>
+                                tienes personas que quieres y en su dia, no sabes que dar o quieres un regalo rapido, llamativo y hermoso no dudes.!
+                            </p>
+                            <a class="link" href="#Productos">Ver Productos</a><span class="marca">no dudes!</span>
+                        </div>
+                    </article>
+                </div>
+                <div id="light3">
+                    <article class="item">
+                        <div class="titulo-i"><h4>Fabrica de Regalos</h4></div>
+                        <div class="texto-i">
+                            <p>Quieres un Diseño Diferente a los que ves?  quieres algo exclusivo? aqui puedes decirnos o simplemente comunicarte en la pestaña de contacto o  atravez de nuestro facebook</p>
+                            <a class="link item5" href="#">Diseñala</a><span class="marca">No Esperes Mas!</span>
+                        </div>
+                    </article>
+                </div>
+                 <div id="light4">
+                    <article class="item">
+                        <div class="titulo-i"><h4>Otros</h4></div>
+                        <div class="texto-i">
+                            <p>Sabemos que no todo son fechas especiales, llegan momentos en que simplemente te llega la idea de darle algo a alquien y para eso estamos para hacerte la vida facil y sorprender a quienes quieres</p>
+                            <a class="link" href="#Productos">Ver Productos</a><span class="marca">no dudes!</span>
+                        </div>
+                    </article>
+                </div>
+                <div id="light5">
+                    <article class="item">
+                        <div class="titulo-i"><h4>Hola!</h4></div>
+                        <div class="texto-i">
+                            <p>Vamos a Comenzar y como todo ponle un nombre a tu ancheta xD</p>
+                            <div class="formr">
+                                <form action="">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" name="nombre">
+                                    <label for="productos">Cuenta que te gustaria que llevara!</label>
+                                    <textarea name="productos" id="descripcion"></textarea>
+                                    <label for="materiales">si deseas puedes contarnos que diseño quieres o te podemos guiar!</label>
+                                    <textarea name="productos" id="descripcion"></textarea>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <button>Ayuda!</button>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button>estamos Listos!</button>
+                                        </div>
+                                    </div>
+                                    <span class="item8">Cerrar!</span>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div id="fade"></div>
                 <div class="col-sm-9">
                     <article class="principal">
                         <p class="descripcion">¿No sabes qué regalar en una fecha especial? Acá encontraras todo tipo de detalles y solución pronta a tu problema !</p>
                          <p class="descripcion">No importa si es el Día del Amor y la Amistad, un aniversario o un cumpleaños: cualquier ocasión es un buen pretexto para demostrar afecto a través de un obsequio. Y qué mejor que demostrarlo con las innovadoras anchetas y regalos de wishes & dreams!</p>
                          <p class="descripcion">Recuerda que en la pestaña de Productos puedes ver todos nuestros Productos</p>
                     </article>
+                    <div class="public visible-lg visible-md"></div>
                 </div>
             </div>
-            <div>
-                <p class="horario">&nbsp;&nbsp;horario de pedidos Todos Los Dias! De: 8 Am a 6 Pm</p>
-            </div>
+            <p class="horario">&nbsp;&nbsp;horario de pedidos Todos Los Dias!</p>
+            <div class="public1 visible-lg"></div>
             <div id="slider">
                 <ul>
                     <li>
-                        <a href="#" class="conte"><img src="imagenes/foto1.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto1.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto1.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto1.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="img/images/foto1.jpg" class="conte" data-lightbox="roadtrip" data-title="Botella m&m con peluche 18.000$">
+                            <img src="img/images/foto1.jpg" alt="imagen" class="fotos"/>
+                        </a>
+                        <a href="img/images/foto2.jpg" class="conte" data-lightbox="roadtrip" data-title="Botella m&m  15.000$">
+                            <img src="img/images/foto2.jpg" alt="imagen" class="fotos"/>
+                        </a>
+                        <a href="img/images/foto3.jpg" class="conte" data-lightbox="roadtrip" data-title="Botella m&m  15.000$">
+                            <img src="img/images/foto3.jpg" alt="imagen" class="fotos"/>
+                        </a>
+                        <a href="img/images/foto4.jpg" class="conte" data-lightbox="roadtrip" data-title="Ancheta Heineken 28.000$">
+                            <img src="img/images/foto4.jpg" alt="imagen" class="fotos"/>
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
-                    </li>
-                    <li>
-                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
-                        <a href="#" class="conte"><img src="imagenes/foto2.jpg" alt="imagen" class="fotos"/></a>
+                        <a href="img/images/foto5.jpg" class="conte" data-lightbox="roadtrip" data-title="Ancheta Con Peluche 28.000$">
+                            <img src="img/images/foto5.jpg" alt="imagen" class="fotos"/>
+                        </a>
+                        <a href="img/images/foto6.jpg" class="conte" data-lightbox="roadtrip" data-title="Ancheta Smirnoff 23.000$">
+                            <img src="img/images/foto6.jpg" alt="imagen" class="fotos"/>
+                        </a>
+                        <a href="img/images/foto7.jpg" class="conte" data-lightbox="roadtrip" data-title="Botella m&m con peluche 18.000$">
+                            <img src="img/images/foto7.jpg" alt="imagen" class="fotos"/>
+                        </a>
+                        <a href="img/images/foto8.png" class="conte" data-lightbox="roadtrip" data-title="Botella m&m con peluche 18.000$">
+                            <img src="img/images/foto8.png" alt="imagen" class="fotos"/>
+                        </a>
                     </li>
                 </ul>
-            </div>    
+            </div>
+            <div class="public2 visible-lg"></div>   
         </section>
        <footer data-role="footer" data-id="pie" data-position="fixed">
            <h3>Wishes & Dreams 2014</h3>
@@ -131,13 +289,11 @@
 
 <!-- *************************  PAGINA DE PRODUCTOS     ******************************** -->
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-     <script src="js/modernizr.custom.63321.js"></script>
-     <div data-role="page" id="Productos">
+<div data-role="page" id="Productos">
         <header data-position="fixed" data-id="cabeza">
             <div class="titular">
                 <h1 class="titulo">
-                   Wishes & Dreams 
+                   Wishes & Dreams
                 </h1>
                 <div>
                     <a href="#" class="filtro">Anchetas y regalos</a>
@@ -147,15 +303,14 @@
             <p class="comparte">Comparte con nosotros:</p>
             <div class="usuario">
                 <div class="redes">   
-                    <a href="https://www.facebook.com/AcurstinSoft" target="_blank" id="icono"><img src="imagenes/facebook.png" alt="facebook"></a>
-                    <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="imagenes/googleplus.png"></a>
-                    <a href="https://co.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" id="icono"></a>
-                    <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="imagenes/twitter.png" title="@AcurstinSoft" id="icono"></a>
+            <a href="https://www.facebook.com/WishesAndDreams222" target="_blank" id="icono"><img src="img/facebook.png" alt="facebook"></a>
+                    <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="img/googleplus.png"></a>
+                    <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="img/Twitter.png" title="@AcurstinSoft" id="icono"></a>
                 </div>
             </div>
         </header>
          <div class="logo">
-                <a href="#inicio"><img src="imagenes/logo.png"/></a>
+                <a href="#Home"><img src="img/logo.png"/></a>
          </div>
         <nav data-role="navbar">
             <ul class="menu">
@@ -165,37 +320,167 @@
             </ul>
         </nav>
         <section data-role="content" class="container">
-            <div class="main">
-                <div id="mi-slider" class="mi-slider">
-                    <ul>
-                        <li><a href="#"><img src="imagenes/images/1.jpg" alt="img01"><h4>Boots</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/2.jpg" alt="img02"><h4>Oxfords</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/3.jpg" alt="img03"><h4>Loafers</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/4.jpg" alt="img04"><h4>Sneakers</h4></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#"><img src="imagenes/images/5.jpg" alt="img05"><h4>Belts</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/6.jpg" alt="img06"><h4>Hats &amp; Caps</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/7.jpg" alt="img07"><h4>Sunglasses</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/8.jpg" alt="img08"><h4>Scarves</h4></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#"><img src="imagenes/images/9.jpg" alt="img09"><h4>Casual</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/10.jpg" alt="img10"><h4>Luxury</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/11.jpg" alt="img11"><h4>Sport</h4></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#"><img src="imagenes/images/12.jpg" alt="img12"><h4>Carry-Ons</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/13.jpg" alt="img13"><h4>Duffel Bags</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/14.jpg" alt="img14"><h4>Laptop Bags</h4></a></li>
-                        <li><a href="#"><img src="imagenes/images/15.jpg" alt="img15"><h4>Briefcases</h4></a></li>
-                    </ul>
-                    <nav>
-                        <a href="#">Shoes</a>
-                        <a href="#">Accessories</a>
-                        <a href="#">Watches</a>
-                        <a href="#">Bags</a>
-                    </nav>
+            <div class="notica1"><span>NOTA:</span><p>Si te gusta alguno de nuestros productos y deseas comprarlo comunicate con nosotros atravez de facebook o la pestaña de contacto o simplemente haciendo Click <a href="#" class="item7">aqui</a> para comunicarte directamente</p></div>
+            <div id="light6">
+                    <article class="item">
+                        <div class="titulo-i"><h4>Hola!</h4></div>
+                        <div class="texto-i">
+                            <p>Vamos a Comenzar con tu compra</p>
+                            <div class="formr">
+                                <form action="">
+                                    <label for="nombre">Nombre del regalo:</label>
+                                    <input type="text" name="nombre">
+                                    <label for="productos">cuentanos que mas cosas quieres que lleve el regalo</label>
+                                    <span>Nota: el precio real puede variar dependiendo de las cosas que quieras agregar</span>
+                                    <textarea name="productos" id="descripcion"></textarea>
+                                    <label for="materiales">quieres una tarjeta? aqui la puedes escribir o te la podemos hacer</label>
+                                    <textarea name="materiales" id="descripcion"></textarea>
+                                    <label for="precio">Precio de regalo:</label>
+                                    <input type="text" name="precio">
+                                    <label for="productos">Correo, celular, Whatsapp, Facebook?</label>
+                                    <span>Nota: solo es para comunicarnos contigo y comfirmar la compra </span>
+                                    <textarea name="productos" id="descripcion"></textarea>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <button>Ayuda!</button>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button>estamos Listos!</button>
+                                        </div>
+                                    </div>
+                                        <span class="item9">Cerrar!</span>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div id="fade1"></div>
+             <div class="row bloque11">
+                 <div class="col-lg-4 col-sm-6 ">   
+                    <div class="imagen it1">
+                        <div class="info">
+                            <p class="headline">Botella m&m</p>
+                            <p class="info2">Con peluche</p>
+                            <a href="#" class="info3"> 15.000$</a>
+                            <div class="row info4" >
+                                <div class="col-sm-4">
+                                    <a href="img/images/foto1.jpg" class="info5" data-lightbox="roadtrip1" 
+                                    data-title="Botella m&m con peluche 15.000$">ver</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#" target="_blank" class="info5">L</a>
+                                </div> 
+                                <div class="col-sm-4">
+                                    <a href="http://acurstinsoft.esy.es/" target="_blank" class="info5">cO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">   
+                    <div class="imagen it2">
+                        <div class="info">
+                            <p class="headline">Botella m&m</p>
+                            <p class="info2">&nbsp;&nbsp;</p>
+                            <a href="#"  class="info3"> 15.000$</a>
+                            <div class="row info4" >
+                                <div class="col-sm-4">
+                                    <a href="img/images/foto2.jpg" class="info5" data-lightbox="roadtrip1" 
+                                    data-title="Botella m&m 15.000$">ver</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#" target="_blank" class="info5">L</a>
+                                </div> 
+                                <div class="col-sm-4">
+                                    <a href="http://acurstinsoft.esy.es/" target="_blank" class="info5">cO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">   
+                    <div class="imagen it3">
+                        <div class="info">
+                            <p class="headline">Botella m&m</p>
+                            <p class="info2">&nbsp;&nbsp;</p>
+                            <a href="#" class="info3"> 15.000$</a>
+                            <div class="row info4" >
+                                <div class="col-sm-4">
+                                    <a href="img/images/foto3.jpg" class="info5" data-lightbox="roadtrip1" 
+                                    data-title="Botella m&m 15.000$">ver</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#" target="_blank" class="info5">L</a>
+                                </div> 
+                                <div class="col-sm-4">
+                                    <a href="http://acurstinsoft.esy.es/" target="_blank" class="info5">cO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">   
+                    <div class="imagen it4">
+                        <div class="info">
+                            <p class="headline">Ancheta</p>
+                            <p class="info2">Heineken</p>
+                            <a href="#" class="info3"> 28.000$</a>
+                            <div class="row info4" >
+                                <div class="col-sm-4">
+                                    <a href="img/images/foto4.jpg" class="info5" data-lightbox="roadtrip1" 
+                                     data-title="Ancheta Heineken 28.000$">ver</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#" target="_blank" class="info5">L</a>
+                                </div> 
+                                <div class="col-sm-4">
+                                    <a href="http://acurstinsoft.esy.es/" target="_blank" class="info5">cO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">   
+                    <div class="imagen it5">
+                        <div class="info">
+                            <p class="headline">Ancheta </p>
+                            <p class="info2">con Peluche!</p>
+                            <a href="#" class="info3"> 28.000$</a>
+                            <div class="row info4" >
+                                <div class="col-sm-4">
+                                    <a href="img/images/foto5.jpg" class="info5" data-lightbox="roadtrip1" 
+                                     data-title="Ancheta con Peluche! 28.000$">ver</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#" target="_blank" class="info5">L</a>
+                                </div> 
+                                <div class="col-sm-4">
+                                    <a href="http://acurstinsoft.esy.es/" target="_blank" class="info5">cO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">   
+                    <div class="imagen it6">
+                        <div class="info">
+                            <p class="headline">Ancheta</p>
+                            <p class="info2">Smirnoff</p>
+                            <a href="#" class="info3">23.000$</a>
+                            <div class="row info4" >
+                                <div class="col-sm-4">
+                                    <a href="img/images/foto6.jpg" class="info5" data-lightbox="roadtrip1" 
+                                    data-title="Ancheta Smirnoff 28.000$" >ver</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#" target="_blank" class="info5">L</a>
+                                </div> 
+                                <div class="col-sm-4">
+                                    <a href="http://acurstinsoft.esy.es/" target="_blank" class="info5">cO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -203,15 +488,7 @@
            <h3>Wishes & Dreams 2014</h3>
         </footer>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="js/jquery.catslider.js"></script>
-        <script>
-            $(function() {
-
-                $( '#mi-slider' ).catslider();
-
-            });
-        </script>
+    
 <!-- *************************  FIN PAGINA DE PORTAFOLIO  ******************************** -->
 
 
@@ -230,7 +507,7 @@
             </div>
         </header>
          <div class="logo">
-                <a href="#inicio"><img src="imagenes/logo.png"/></a>
+                <a href="#Home"><img src="img/logo.png"/></a>
          </div>
         <nav data-role="navbar">
             <ul class="menu">
@@ -256,8 +533,14 @@
                         <input type="email" name="correo" id="correo">
                         <label for="descripcion">Mensaje</label>
                         <textarea name="descripcion" id="descripcion"></textarea>
-                        <button type="submit" name="submit" value="Enviar"><span class="boton2"> Enviar&nbsp;&nbsp;</span></button>
-                        <button type="reset" name="borrar" ><span class="boton1">Limpiar&nbsp;&nbsp;</span></button>
+                         <div class="row">
+                            <div class="col-xs-6">
+                            <button type="submit" name="submit" value="Enviar"><span class="boton2"> Enviar&nbsp;&nbsp;</span></button>
+                            </div>
+                            <div class="col-xs-6">
+                            <button type="reset" name="borrar" ><span class="boton1">Limpiar&nbsp;&nbsp;</span></button>
+                            </div>
+                        </div>
                     </form>
                 </div>
                  <div class="informacion col-sm-4">
@@ -268,10 +551,9 @@
                     </div>
                     <span>Comparte Con nosotros:</span>
                     <div class="redes">   
-                        <a href="https://www.facebook.com/AcurstinSoft" target="_blank" id="icono"><img src="imagenes/facebook.png" alt="facebook"></a>
-                        <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="imagenes/googleplus.png"></a>
-                        <a href="https://co.linkedin.com/" target="_blank"><img src="imagenes/linkedin.png" id="icono"></a>
-                        <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="imagenes/twitter.png" title="@AcurstinSoft" id="icono"></a>
+            <a href="https://www.facebook.com/WishesAndDreams222" target="_blank" id="icono"><img src="img/facebook.png" alt="facebook"></a>
+                        <a href="https://plus.google.com/116656404072387912726/posts" target="_blank" id="icono"><img src="img/googleplus.png"></a>
+                        <a href="https://twitter.com/AcurstinSoft" target="_blank"><img src="img/Twitter.png" title="@AcurstinSoft" id="icono"></a>
                     </div>  
                 </div> 
             </div>
@@ -287,7 +569,7 @@
     <div data-role="page" id="inicio">
         <header data-position="fixed" data-id="cabeza">
             <div class="logo">
-                <a href="#Home"><img src="imagenes/logo.png" alt="Puls4"/></a> 
+                <a href="#Home"><img src="img/logo.png" alt="Puls4"/></a> 
             </div>
             <div class="titular">
                 <h1 class="titulo">
@@ -327,7 +609,7 @@
     <div data-role="page" id="perfil">
         <header data-position="fixed" data-id="cabeza">
             <div class="logo">
-                <a href="#Home"><img src="imagenes/logo.png" alt="Puls4"/></a> 
+                <a href="#Home"><img src="img/logo.png" alt="Puls4"/></a> 
             </div>
             <div class="titular">
                 <h1 class="titulo">
